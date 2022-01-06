@@ -1,0 +1,37 @@
+[
+    {
+        "Position": 1,
+        "Name": "E-commerce site",
+        "Link": "https//www.imdb.com/test-sites/e-commerce/allinone"
+    },
+    {
+        "Position": 2,
+        "Name": "E-commerce site with pagination links",
+        "Link": "https//www.imdb.com/test-sites/e-commerce/static"
+    },
+    {
+        "Position": 3,
+        "Name": "E-commerce site with popup links",
+        "Link": "https//www.imdb.com/test-sites/e-commerce/allinone-popup-links"
+    },
+    {
+        "Position": 4,
+        "Name": "E-commerce site with AJAX pagination links",
+        "Link": "https//www.imdb.com/test-sites/e-commerce/ajax"
+    },
+    {
+        "Position": 5,
+        "Name": "E-commerce site with \"Load more\" buttons",
+        "Link": "https//www.imdb.com/test-sites/e-commerce/more"
+    },
+    {
+        "Position": 6,
+        "Name": "E-commerce site that loads items while scrolling",
+        "Link": "https//www.imdb.com/test-sites/e-commerce/scroll"
+    },
+    {
+        "Position": 7,
+        "Name": "Table playground",
+        "Link": "https//www.imdb.com/test-sites/tables"
+    }
+]

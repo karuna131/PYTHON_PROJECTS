@@ -1,0 +1,450 @@
+[
+    {
+        "id": "2344",
+        "parent_exercise_id": null,
+        "course_id": "104",
+        "name": "Introduction to Dictionary",
+        "slug": "dictionary__intro_dictionary",
+        "sequence_num": 0,
+        "review_type": "peer",
+        "submission_type": "url",
+        "github_link": "https://github.com/navgurukul/newton/tree/master/dictionary/intro_dictionary.md",
+        "solution": null,
+        "content": [
+            {
+                "type": "markdown",
+                "value": "# DICTIONARY  \n\n\n \n\n## DEFINITION :-\n\n \n\nHum dictionary banane ke liye key aur value ke pairs ko curly braces \u201c{ }\u201d me likhte hai aur har pair ko hum separate karne ke liye comma \u201c,\u201d ka use karte hai aur key ko uske nirdharit value ke saath likhne ke liye colon \u201c:\u201d ka use karte hain : \n\n**Example:-** "
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "city_population = {\n    \"NewYorkCity\":8550405,\n    \"LosAngeles\":3971883, \n    \"Toronto\":2731571, \n    \"Chicago\":2720546, \n    \"Houston\":2296224, \n    \"Montreal\":1704694, \n    \"Calgary\":1239220, \n    \"Vancouver\":631486, \n    \"Boston\":667137\n}\n\nprint(city_population[\"NewYorkCity\"])\nprint(city_population)\nprint(type(city_population))",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n`Output` \n\n## Keys Case Sensitive :-\n\n \n\nDictionary ki keys case sensitive hoti hain , matlab hum same name ki keys ko alag alag case me likh sakte hai aur python usko alag alag keys ki tarah treat karega. \n\n**Example:-**  "
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "\n Dict = {\n       'ball' : 'green',\n       'Ball': 'red'\n     }\nprint(Dict['ball'])\nprint(Dict['Ball'])\nprint(Dict['bat'])",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n*Dict* me *\u201cball\u201d* ek key hai aur *\u201cgreen\u201d* uski value hai. Isi tarah *\u201cBall\u201d* dusri key hai aur *\u201cred\u201d* uski value hain. \n\n## dict() function\n\n \n\nAap dict() ka use kar ke dictionary bana sakte hai \n\n`Example:-` "
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "student=dict(name= \"Ravina\",age= 20)\nprint(student)",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n`Output:- ` \n\n`{'age': 20, 'name': 'Ravina'}` \n\n## DataType of Keys and Values\n\n \n\nEk *dictionary* me values kisi bhi datatype ke ho sakte hain aur ye same bhi ho sakti hai lekin keys humesha unique hoti hai. \n\n**Example:-**  \n\n*dictionary with integer keys:-* "
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "   my_dict = {\n    1: 'apple', \n    2: 'ball'\n    }\n",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n*dictionary with mixed keys:-* "
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "my_dict = {\n    'name': 'John',\n     1: [2, 4, 3]\n    }",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n## Nested Dictionary:-\n\n\n\n "
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "Dic= {\n 1: 'NAVGURUKUL',\n 2: 'IN',  \n 3:{\n     'A' : 'WELCOME',\n     'B' : 'To', \n     'C' : 'DHARAMSALA'\n     }\n}\nprint(Dic)",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n*Output :-* \n\n`{1: 'NAVGURUKUL', 2: 'IN', 3: {'A': 'WELCOME', 'B': 'To', 'C': 'DHARAMSALA'}}` "
+            },
+            {
+                "type": "youtube",
+                "value": "daefaLgNkw0"
+            },
+            {
+                "type": "youtube",
+                "value": "0g1ogNP5doA"
+            }
+        ]
+    },
+    {
+        "id": "2346",
+        "parent_exercise_id": null,
+        "course_id": "104",
+        "name": " Accessing Elements from a Dictionary",
+        "slug": "dictionary__access_element_dictionary",
+        "sequence_num": 100,
+        "review_type": "peer",
+        "submission_type": "url",
+        "github_link": "https://github.com/navgurukul/newton/tree/master/dictionary/access_element_dictionary.md",
+        "solution": null,
+        "content": [
+            {
+                "type": "markdown",
+                "value": "\n\n## Accessing Elements from a Dictionary:-\n\n\n \n\nHum square brackets ka use karke dictionary ke values ko access kar sakte hain. Jaisa ki niche dikhaya gaya hai. \n\n**Example 1:-** "
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "person={\n    'name':'jack',\n    'age':20,\n    'gender':'male',\n    4:'organisation'}\n\nresult = person['age'] \nx = person.get(\"gender\")\nprint(person[4])\nprint(x)\nprint(result)",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n*Output:-* \n\n`organisation male 20 `  \n\n**get()** function bhi dictionary ki value access karne mai help karta hai.  \n\n**Example 2:-** "
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "person={\n    'name':'jack',\n    'age':20,\n    'gender':'male',\n    4:{\n        'organisation':'navgurukul','place':'dharamsala'\n        }\n    }\nprint(person['gender'])\n\nprint(person[4])\n\nresult = person[4]['place']\n\nprint(result)",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n*Output:-*\n`  male {'organisation': 'navgurukul', 'place': 'dharamsala'}\n dharamsala\n` "
+            }
+        ]
+    },
+    {
+        "id": "2348",
+        "parent_exercise_id": null,
+        "course_id": "104",
+        "name": " Adding Elements to a  Dictionary",
+        "slug": "dictionary__add_element_to_dictionary",
+        "sequence_num": 200,
+        "review_type": "peer",
+        "submission_type": "url",
+        "github_link": "https://github.com/navgurukul/newton/tree/master/dictionary/add_element_to_dictionary.md",
+        "solution": null,
+        "content": [
+            {
+                "type": "markdown",
+                "value": "\n\n## Adding Elements to a  Dictionary:-\n\n \n\nPython dictionary me hum ek baar me ek hi key-value add kar sakte hai aur add karne ke liye humein key ko square brackets \u201c[ ]\u201d me likhte hain aur uski value ko \u201c=\u201d operator ka use karke assign kar dete hain. \n\n**Example 1:-**  "
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "dic= {\n    'Name': 'RAM', \n    'Age': 17,\n    }\n    \ndic['ORGANIZATION'] = \"NAV GURUKUL\"\n\ndic['place'] = 'dharamsala'\n\nprint(dic)",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n*Output:- *  \n\n`{'Name': 'RAM', 'Age': 17,'ORGANIZATION': 'NAVGURUKUL', 'place':'dharamsala}` \n\n**Example 2:-** "
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "dic= {\n   'Name': 'RAM',\n   'Age': 17,\n    }\ndic['student']={\n       'id':22, \n       'place':'dharamsala'\n   }\nprint(dic)",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n*Output:-* \n\n`{'Name': 'RAM', 'Age': 17, 'student': {'id': 22, 'place': 'dharamsala'}}` \n\n## Key Exists or not\n\n \n\nDictionary mai key exists karti hai ya nahi check karne ke liye hum in keyword ka use karte hai. "
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "car ={\n    \"brand\":  \"ford\",\n    \"model\":  \"mustang\",\n    \"year\":  1964\n}\nif \"model\" in car:\n    print(\"Yes, 'model' is one of the keys in the car dictionary.\")\n\nelse:\n    print(\"No, 'model' key dictionary mai nahi hai.\")",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n`Output :- ` \n\n`Yes, 'model' is one of the keys in the thisdict dictionary.` "
+            }
+        ]
+    },
+    {
+        "id": "2349",
+        "parent_exercise_id": null,
+        "course_id": "104",
+        "name": "  Update Dictionary",
+        "slug": "dictionary__update_element_dictionary",
+        "sequence_num": 300,
+        "review_type": "peer",
+        "submission_type": "url",
+        "github_link": "https://github.com/navgurukul/newton/tree/master/dictionary/update_element_dictionary.md",
+        "solution": null,
+        "content": [
+            {
+                "type": "markdown",
+                "value": "\n\n## Updating Dictionary :-\n\n \n\nHum dictionary ko update karne ke liye usme ek entry kar sakte hai ya fir key-value pair add kar sakte hai aur jo key pehle se present hai uski value change kar sakte hai. Jaisa ki niche example me dikhaya gaya hain. \n\n**Example 1:-** "
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "person= {'1': 'RAM', '2': 17,}\nperson[3] = 'male'\nprint(person)",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n*Output:-*\n` {'1': 'RAM', '2': 17,'3':'male'}` \n\n**Example 2-** "
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "details={\n    'Name': 'RAM',\n     'Age': 17, \n     'student': {\n      'id': 22,\n      'place': 'dharamsala'\n      }\n     } \ndetails['student']['id']=35\nprint(details); ",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n*Output:-* \n\n`{'Name': 'RAM', 'Age': 17, 'student': {'id': 35, 'place': 'dharamsala'}}` \n\n## Copy of Dictionary :- \n\n\n \n\nHum dictionary ko 2 tarike se copy kar sakte hai,phela method *copy()* and second method by using built-in function dict(). \n\n`Example 1 :-` "
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "classes ={\n    \"room1\":  \"6th\",\n    \"room2\":  \"7th\",\n    \"room3\":  \"8th\"\n        }\nmydict=classes.copy()\nprint(mydict)",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n`Ouput:-` \n\n`{'room2': '7th', 'room3': '8th', 'room1': '6th'` "
+            }
+        ]
+    },
+    {
+        "id": "2350",
+        "parent_exercise_id": null,
+        "course_id": "104",
+        "name": " Removing Elements from a Dictionary",
+        "slug": "dictionary__remove_element_dictionary",
+        "sequence_num": 400,
+        "review_type": "peer",
+        "submission_type": "url",
+        "github_link": "https://github.com/navgurukul/newton/tree/master/dictionary/remove_element_dictionary.md",
+        "solution": null,
+        "content": [
+            {
+                "type": "markdown",
+                "value": "\n\n## Removing Elements from a Dictionary:-\n\n \n\nHum dictionary ke elements ko kahin tareeko se remove kar sakte hain.\nJaisa ki niche dikhaya gaya hain. \n\nHum **pop( )** method ka use karke specified element ko remove kar sakte hain : "
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "CAR_DETAILS={\n    \"brand\": \"Ford\",\n    \"model\": \"jason\",\n    \"year\": 1964\n}\nCAR_DETAILS.pop(\"model\")\nprint(CAR_DETAILS)",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n*Output:-* \n\n` {'brand': 'Ford', 'year': 1964}` \n\nThe **popitem()** method removes the last inserted item: "
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "person={\n    'name':'jack',\n    'id':22,\n    'place':'dharamsala'\n}\nperson.popitem()\nprint(person)",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n*Output:-* \n\n`{'name':'jack','id':22}` \n\nHum **del** keyword ka use karke kisi specified element ko delete kar sakte hain : "
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "person={\n    'name':'jack',\n    'id':22,\n    'place':'dharamsala'\n}\n\ndel person('place')\nprint(person)",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n*Output:-* \n\n` {'name':'jack','id':22}` "
+            }
+        ]
+    },
+    {
+        "id": "2345",
+        "parent_exercise_id": null,
+        "course_id": "104",
+        "name": " Iteration",
+        "slug": "dictionary__iterations",
+        "sequence_num": 500,
+        "review_type": "peer",
+        "submission_type": "url",
+        "github_link": "https://github.com/navgurukul/newton/tree/master/dictionary/iterations.md",
+        "solution": null,
+        "content": [
+            {
+                "type": "markdown",
+                "value": "\n\n## Iterate through all keys:-\n "
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "states_capitals = {\n  'Gujarat' : 'Gandhinagar',\n  'Maharashtra' : 'Mumbai',\n  'Rajasthan' : 'Jaipur',\n  'Bihar' : 'Patna'\n  }\nfor state in states_capitals:\n      print(state)",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n*Output:-*\n`Gujarat Maharashtra Rajasthan Bihar` \n\n## Iterate through all values:-\n\n \n\n`Example :-` "
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "states_capitals = {\n    'Gujarat' : 'Gandhinagar',\n    'Maharashtra' : 'Mumbai',\n    'Rajasthan' : 'Jaipur',\n    'Bihar' : 'Patna'\n    }\n    \nfor state in states_capitals:\n    print(states_capitals[state])",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n*Output :-*\n   ` Gandhinagar\n        Mumbai\n        Jaipur\n        Patna` \n\n`Example :-` "
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "details ={\n    \"name\":  \"Bijender\",\n    \"age\":  17,\n    \"class\":  \"10th\"\n    }\nfor x in details.values():\n    print(x)",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n`Output: ` \n\n`17\nBijender\n10th\n` \n\n`Example  :-` \n\ndictionary se *keys* and *values* *ek sath* kaise print karte hai. "
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "movie ={\n    \"name\":  \"Puli\",\n    \"hero\":  \"Vijay\",\n    \"rating\":  7.5\n    }\nfor x,y in movie.items():\n    print(x,y)",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n`Output :-` \n\n`('rating', 7.5)\n('hero', 'Vijay')\n('name', 'Puli')\n` \n\n## Dictionary length\n\n \n\n**Dictionary length** hum dictionary mai kitne items hai yai count karne ke liye karte hai. \n\n`Example:- ` "
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "meal ={\n    \"monday\":  \"Chole chawal\",\n    \"sunday\":  \"Fried rice\",\n    \"wednesday\":  \"dosa\"\n    }\nprint(len(meal))",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n*Output :-*\n   `3` "
+            }
+        ]
+    },
+    {
+        "id": "2347",
+        "parent_exercise_id": "2347",
+        "course_id": "104",
+        "name": " Questions",
+        "slug": "dictionary__Questions/intro",
+        "sequence_num": 600,
+        "review_type": "peer",
+        "submission_type": "url",
+        "github_link": "https://github.com/navgurukul/newton/tree/master/dictionary/Questions/intro.md",
+        "solution": null,
+        "content": [
+            {
+                "type": "markdown",
+                "value": "\n\nAb hum dictionary se related kuch questions karege. Jo hume dictionary ki better understand mai help karega. "
+            }
+        ]
+    },
+    {
+        "id": "2404",
+        "parent_exercise_id": "2404",
+        "course_id": "104",
+        "name": " Code Output  ",
+        "slug": "dictionary__OutputOfCode/intro",
+        "sequence_num": 700,
+        "review_type": "peer",
+        "submission_type": "url",
+        "github_link": "https://github.com/navgurukul/newton/tree/master/dictionary/OutputOfCode/intro.md",
+        "solution": null,
+        "content": [
+            {
+                "type": "markdown",
+                "value": "\n\n## Code Output \n\n \n\nAb hum function se related kuch questions karege. Jo hume dictionary ki better understand mai help karega. "
+            }
+        ]
+    },
+    {
+        "id": "2405",
+        "parent_exercise_id": "2405",
+        "course_id": "104",
+        "name": " Debug  Code",
+        "slug": "dictionary__DebugCode/intro",
+        "sequence_num": 800,
+        "review_type": "peer",
+        "submission_type": "url",
+        "github_link": "https://github.com/navgurukul/newton/tree/master/dictionary/DebugCode/intro.md",
+        "solution": null,
+        "content": [
+            {
+                "type": "markdown",
+                "value": "\n\n## Debug  Code\n \n\nAb hum dictionary se related code ko debug karenge. "
+            }
+        ]
+    },
+    {
+        "id": "2406",
+        "parent_exercise_id": "2406",
+        "course_id": "104",
+        "name": " Becoming A Programmer",
+        "slug": "dictionary__BonusTask/intro",
+        "sequence_num": 900,
+        "review_type": "peer",
+        "submission_type": "url",
+        "github_link": "https://github.com/navgurukul/newton/tree/master/dictionary/BonusTask/intro.md",
+        "solution": null,
+        "content": [
+            {
+                "type": "markdown",
+                "value": "\n\n## Becoming A Programmer\n\n \n\nIss Task mai apko dictionary ke bare mai six new concepts padne hai. \n\nPhele apko dictionary ke three new concepts python ki website se padna hai. \n- https://docs.python.org/3/tutorial/datastructures.html\n\n \n\nFir aap three new concepts **Stackoverflow** se padh hai. \n\nApp ek google doc par apni understand likh kar apne mentor se share karenge aur concepts se related kuch questions bhi karenge. \n\nApp ek class lenge jisme apne jo new concepts sikhe hai woh explain karenge.  "
+            }
+        ]
+    },
+    {
+        "id": "2418",
+        "parent_exercise_id": "2418",
+        "course_id": "104",
+        "name": " Interview Questions",
+        "slug": "dictionary__InterviewQuestions/intro",
+        "sequence_num": 1000,
+        "review_type": "peer",
+        "submission_type": "url",
+        "github_link": "https://github.com/navgurukul/newton/tree/master/dictionary/InterviewQuestions/intro.md",
+        "solution": null,
+        "content": [
+            {
+                "type": "markdown",
+                "value": "\n\n## Interview Questions\n \n\nQ1. Difference between dict.items() and dict.iteritems() in Python? \n\nQ2. Python program to print the dictionary in a table format? \n\nQ3. How to find length of dictionary values? \n\nQ4. Find keys with duplicate values in the dictionary? \n\nQ5. Sum list of dictionaries with the same key? \n\nQ6. Split dictionary keys and values into separate lists? \n\nQ7. Convert a set into a dictionary? \n\nQ8. Get key with maximum value in Dictionary? \n\nQ9. Sort the list alphabetically in a dictionary? \n\nQ10.  Remove spaces from dictionary keys? "
+            }
+        ]
+    }
+]

@@ -1,0 +1,92 @@
+{
+    "1": {
+        "driver": "dilip",
+        "Contect_number": 8375979209,
+        "vehicle": "cab",
+        "Car_color": "Red",
+        "vehical_number": 5431,
+        "amount/km": 10,
+        "Rating": "4.1"
+    },
+    "2": {
+        "driver": "suresh",
+        "Contect_number": 9375979209,
+        "vehicle": "taxi",
+        "Car_color": "black",
+        "vehical_number": 5431,
+        "amount/km": 11,
+        "Rating": "4.5"
+    },
+    "3": {
+        "driver": "ramesh",
+        "Contect_number": 6375979209,
+        "vehicle": "cab",
+        "Car_color": "Blue",
+        "vehical_number": 6431,
+        "amount/km": 10,
+        "Rating": "3.5"
+    },
+    "4": {
+        "driver": "santaram",
+        "Contect_number": 4375979209,
+        "vehicle": "auto",
+        "Car_color": "White",
+        "vehical_number": 3431,
+        "amount/km": 13,
+        "Rating": "4"
+    },
+    "5": {
+        "driver": "shreekant",
+        "Contect_number": 9875979209,
+        "vehicle": "cab",
+        "Car_color": "Brown",
+        "vehical_number": 9431,
+        "amount/km": 15,
+        "Rating": "4.1"
+    },
+    "6": {
+        "driver": "ram",
+        "Contect_number": 6275979209,
+        "vehicle": "bike",
+        "Car_color": "black",
+        "vehical_number": 5031,
+        "amount/km": 12,
+        "Rating": "4.2"
+    },
+    "7": {
+        "driver": "shubham",
+        "Contect_number": 6166979209,
+        "vehicle": "taxi",
+        "Car_color": "Brown",
+        "vehical_number": 2431,
+        "amount/km": 9,
+        "Rating": "4.6"
+    },
+    "8": {
+        "driver": "sunil",
+        "Contect_number": 6375979209,
+        "vehicle": "auto",
+        "Car_color": "black",
+        "vehical_number": 8431,
+        "amount/km": 17,
+        "Rating": "4"
+    },
+    "9": {
+        "driver": "rajat",
+        "Contect_number": 9175979209,
+        "vehicle": "taxi",
+        "Car_color": "Red",
+        "vehical_number": 4431,
+        "amount/km": 20,
+        "Rating": "4.5"
+    },
+    "10": {
+        "driver": "rajendar",
+        "Contect_number": 9075979209,
+        "vehicle": "bike",
+        "Car_color": "Brown",
+        "vehical_number": 2131,
+        "amount/km": 14,
+        "Rating": "4.2"
+    }
+}

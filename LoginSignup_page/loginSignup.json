@@ -1,0 +1,22 @@
+{
+    "Karu@123": [
+        {
+            "Name": "karuna jaiswal",
+            "Password": "Karu@123",
+            "describtion": "I am a student",
+            "DOB": "12/12/2000",
+            "Hobbies": "sports",
+            "Gender": "F"
+        }
+    ],
+    "KAVIjai@123": [
+        {
+            "Name": "kavi",
+            "Password": "KAVIjai@123",
+            "describtion": "I am a student",
+            "DOB": "05/03/1999",
+            "Hobbies": "reading book",
+            "Gender": "M"
+        }
+    ]
+}
